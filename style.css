@@ -124,8 +124,8 @@ h3{line-height:1.2}
 .hero-bottom .r{border-right:2px solid rgba(185,152,95,.7);padding-right:.9rem;text-align:right;font-style:italic;max-width:20rem}
 @media(max-width:900px){
   .hero-bottom{display:none}
-  .hero{--pw:250vw;--top:4.5rem;min-height:calc(var(--top) + var(--pw)*.5625*.49 + 21rem)}
-  .hero-people{bottom:auto;top:var(--top);width:250vw;left:50%}
+  .hero{--pw:205vw;--top:4.5rem;min-height:calc(var(--top) + var(--pw)*.5625*.49 + 21rem)}
+  .hero-people{bottom:auto;top:var(--top);width:205vw;left:50%}
   .hero-cards{bottom:auto;top:calc(var(--top) + var(--pw)*.5625*.12);height:10rem;perspective:800px}
   .hero-card{width:12.5rem;height:8.4rem;border-radius:1.1rem}
   .hero-track{gap:.8rem;animation-duration:30s}
