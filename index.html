@@ -3,509 +3,47 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cintra Odontologia | Lentes, harmonização e implantes na Vila Curuçá, SP</title>
-<meta name="description" content="Cintra Odontologia & Estética na Vila Curuçá, São Paulo. Lentes em resina e porcelana, harmonização facial, implantes e clareamento com a Dra. Isabelle Cintra.">
+<title>Cintra Odontologia | Lentes, estética facial e implantes na Vila Curuçá, SP</title>
+<meta name="description" content="Cintra Odontologia & Estética na Vila Curuçá, São Paulo. Lentes em resina e porcelana, estética facial, implantes e clareamento com as doutoras Isabelle e Karen Cintra.">
 <meta name="theme-color" content="#6F5C4E">
-<meta property="og:title" content="Cintra Odontologia | Lentes, harmonização e implantes">
-<meta property="og:description" content="Realce o seu sorriso sem perder a naturalidade. Agende sua avaliação pelo WhatsApp.">
+<meta property="og:title" content="Cintra Odontologia | Lentes, estética facial e implantes na Vila Curuçá, SP">
+<meta property="og:description" content="Cintra Odontologia & Estética na Vila Curuçá, São Paulo. Lentes em resina e porcelana, estética facial, implantes e clareamento com as doutoras Isabelle e Karen Cintra.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%236F5C4E'/%3E%3Ctext x='32' y='43' font-size='34' text-anchor='middle' fill='%23F3EEE7' font-family='Georgia,serif'%3EC%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Hanken+Grotesk:wght@400;500;600&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..600,100;1,9..144,400..500,100&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="style.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Dentist",
   "name": "Cintra Odontologia & Estética",
-  "description": "Clínica odontológica com foco em lentes em resina e porcelana, harmonização facial, implantes e clareamento.",
+  "description": "Clínica odontológica com foco em lentes em resina e porcelana, estética facial, implantes e clareamento.",
   "founder": { "@type": "Person", "name": "Isabelle Cintra" },
   "employee": [{ "@type": "Person", "name": "Isabelle Cintra", "jobTitle": "Fundadora e sócia" }, { "@type": "Person", "name": "Karen Cintra", "jobTitle": "Sócia" }],
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "São Paulo",
-    "addressRegion": "SP",
-    "addressCountry": "BR"
-  },
+  "address": { "@type": "PostalAddress", "addressLocality": "São Paulo", "addressRegion": "SP", "addressCountry": "BR" },
   "areaServed": "Vila Curuçá, São Paulo",
   "sameAs": ["https://www.instagram.com/cintraodontologia_/"]
 }
 </script>
-
-<style>
-:root{
-  --ivory:#F3EEE7;
-  --sand:#E6DCCF;
-  --mocha:#6F5C4E;
-  --taupe:#8B7765;
-  --cocoa:#2B211B;
-  --cocoa-soft:#5A4A3F;
-  --gold:#B9985F;
-  --curve:clamp(2rem, 6vw, 5rem);
-  --gutter:clamp(1.25rem, 5vw, 4rem);
-  --max:76rem;
-  --serif:"Gilda Display", Georgia, "Times New Roman", serif;
-  --sans:"Hanken Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{
-  font-family:var(--sans);
-  font-size:1.0625rem;
-  line-height:1.65;
-  color:var(--cocoa);
-  background:var(--ivory);
-  -webkit-font-smoothing:antialiased;
-}
-img,svg{display:block;max-width:100%}
-a{color:inherit}
-ul,ol{list-style:none}
-:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
-
-.wrap{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:var(--gutter)}
-h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-0.005em}
-h2{font-size:clamp(2rem, 4.2vw, 3.5rem);line-height:1.08}
-h3{line-height:1.2}
-
-/* Botões */
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
-  padding:.95rem 1.7rem;border-radius:999px;
-  font:600 1rem/1 var(--sans);text-decoration:none;
-  transition:transform .2s ease, background-color .2s ease, color .2s ease;
-}
-.btn:active{transform:scale(.97)}
-.btn-light{background:var(--ivory);color:var(--cocoa)}
-.btn-light:hover{background:#fff}
-.btn-dark{background:var(--cocoa);color:var(--ivory)}
-.btn-dark:hover{background:#40322a}
-.btn svg{width:1.15rem;height:1.15rem;fill:currentColor}
-.textlink{
-  font-weight:600;text-decoration:none;
-  background:linear-gradient(currentColor,currentColor) 0 100%/100% 1px no-repeat;
-  padding-bottom:.2rem;transition:background-size .25s ease;
-}
-.textlink:hover{background-size:0 1px;background-position:100% 100%}
-
-/* Cabeçalho */
-.site-header{position:absolute;inset:0 0 auto 0;z-index:5;color:var(--ivory)}
-.site-header .wrap{display:flex;align-items:center;justify-content:space-between;padding-block:1.6rem}
-.brand{text-decoration:none;display:flex;flex-direction:column;line-height:1}
-.brand img{display:block;width:8rem;height:auto}
-.nav{display:none;gap:2.2rem;font-size:.97rem}
-.nav a{text-decoration:none;opacity:.9}
-.nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:.35rem}
-@media(min-width:900px){.nav{display:flex}}
-.site-header .btn{padding:.75rem 1.3rem;font-size:.95rem}
-@media(max-width:480px){
-  .brand img{width:6.6rem}
-  .site-header .btn{padding:.7rem 1rem;font-size:.88rem}
-}
-
-/* Hero (vitrine) */
-.hero{
-  --glow:#D9BC85;
-  position:relative;--pw:clamp(760px,84vw,1500px);--lift:5rem;min-height:calc(var(--pw)*.5625 + var(--lift) + 5rem);display:flex;flex-direction:column;justify-content:flex-end;align-items:center;
-  background:linear-gradient(180deg,#000 0%,rgba(0,0,0,.9) 7%,rgba(0,0,0,.45) 20%,rgba(0,0,0,0) 42%),radial-gradient(circle at 50% 22%,#43342A 0%,#2B211B 55%,#1A130F 100%);
-  color:var(--ivory);overflow:hidden;
-  padding:0 0 calc(var(--curve) + 1.6rem);
-  isolation:isolate;
-}
-.hero-vignette{position:absolute;inset:0;z-index:4;pointer-events:none;background:radial-gradient(circle at center,transparent 30%,rgba(20,13,9,.75) 85%)}
-.hero-lines{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.5;
-  background-image:linear-gradient(rgba(243,238,231,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(243,238,231,.035) 1px,transparent 1px);
-  background-size:64px 64px;-webkit-mask-image:radial-gradient(ellipse at 50% 45%,#000 15%,transparent 70%);mask-image:radial-gradient(ellipse at 50% 45%,#000 15%,transparent 70%)}
-.hero-cards{position:absolute;bottom:calc(var(--pw)*.5625*.46 + var(--lift));left:0;width:100%;height:20rem;z-index:2;perspective:1200px;overflow:hidden;display:flex;align-items:center}
-.hero-cards::before,.hero-cards::after{content:"";position:absolute;top:0;bottom:0;width:18%;z-index:3;pointer-events:none}
-.hero-cards::before{left:0;background:linear-gradient(90deg,#2B211B 8%,transparent)}
-.hero-cards::after{right:0;background:linear-gradient(-90deg,#2B211B 8%,transparent)}
-.hero-track{display:flex;gap:1.75rem;width:max-content;padding:2rem 0;animation:heroStream 40s linear infinite;transform-style:preserve-3d}
-.hero-track:hover{animation-play-state:paused}
-@keyframes heroStream{to{transform:translateX(calc(-50% - .875rem))}}
-.hero-card{width:25rem;height:17rem;flex-shrink:0;border-radius:1.6rem;overflow:hidden;background:#3a2d25;
-  border:1px solid rgba(243,238,231,.16);box-shadow:0 1.3rem 2.6rem -.6rem rgba(0,0,0,.8),0 0 1.6rem rgba(185,152,95,.14);
-  transform:perspective(1000px) rotateY(6deg)}
-.hero-card img{width:100%;height:100%;object-fit:cover;filter:brightness(.92) contrast(1.04)}
-.hero-glow{position:absolute;inset:0;z-index:3;pointer-events:none}
-.hero-glow i{position:absolute;left:50%;top:60%;transform:translate(-50%,-50%);border-radius:50%}
-.hero-glow .g1{width:46rem;height:36rem;background:radial-gradient(ellipse 50% 48%,rgba(217,188,133,.55) 0%,rgba(185,152,95,.30) 35%,rgba(111,92,78,.10) 60%,transparent 72%);filter:blur(50px);animation:glowPulse 6s ease-in-out infinite alternate}
-.hero-glow .g2{width:80rem;max-width:100vw;height:58rem;background:radial-gradient(ellipse 60% 52%,rgba(139,119,101,.38) 0%,rgba(111,92,78,.2) 40%,transparent 76%);filter:blur(75px)}
-@keyframes glowPulse{from{opacity:.85;transform:translate(-50%,-50%) scale(.96)}to{opacity:1;transform:translate(-50%,-50%) scale(1.06)}}
-.hero-people{position:absolute;bottom:var(--lift);left:50%;transform:translateX(-50%);width:var(--pw);aspect-ratio:1920/1080;z-index:5;pointer-events:none}
-.hero-people img{width:100%;height:100%;object-fit:contain;object-position:bottom center;position:relative;
-  filter:contrast(1.04) saturate(1.04) drop-shadow(0 0 1px rgba(0,0,0,.55)) drop-shadow(0 1.4rem 2.6rem rgba(8,5,3,.75)) drop-shadow(0 0 3rem rgba(217,188,133,.22));
-  -webkit-mask-image:linear-gradient(to bottom,#000 72%,transparent 99%);mask-image:linear-gradient(to bottom,#000 72%,transparent 99%)}
-.hero-people::before{content:"";position:absolute;left:28%;right:28%;top:4%;bottom:0;z-index:-1;pointer-events:none;
-  background:radial-gradient(ellipse at 50% 48%,rgba(10,6,4,.78) 0%,rgba(10,6,4,.4) 42%,transparent 72%);filter:blur(12px)}
-
-.hero-fade{position:absolute;left:0;right:0;bottom:0;height:calc(var(--pw)*.5625*.5 + 2rem);z-index:6;pointer-events:none;background:linear-gradient(to top,rgba(18,12,9,.96) 0%,rgba(18,12,9,.86) 40%,rgba(18,12,9,.45) 72%,rgba(18,12,9,0) 100%)}
-.hero-content{position:relative;z-index:10;width:100%;max-width:82rem;padding-inline:var(--gutter);display:flex;flex-direction:column;align-items:center}
-.hero-main{display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:0}
-.hero-kicker{font:600 .95rem/1.4 "Nunito",var(--sans);letter-spacing:.04em;color:#E6DCCF;margin-bottom:.8rem;text-shadow:0 2px 10px rgba(0,0,0,.8)}
-.hero-kicker b{color:var(--glow);font-weight:700}
-.hero h1{font-family:"Fraunces",var(--serif);font-variation-settings:"SOFT" 100,"opsz" 144;font-weight:500;
-  font-size:clamp(2rem,3.5vw,3.3rem);line-height:1.1;letter-spacing:-.01em;max-width:52rem;margin-bottom:1rem;text-shadow:0 4px 25px rgba(0,0,0,.9)}
-.hero h1 em{font-style:italic;font-weight:400;background:linear-gradient(135deg,#fff 20%,#E4CC9C 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.hero-sub{max-width:46rem;text-wrap:balance;margin:0 0 1.3rem;color:#D9CFC3;font:400 1.05rem/1.5 "Nunito",var(--sans);text-shadow:0 2px 12px rgba(0,0,0,.8)}
-.hero-cta{display:inline-flex;align-items:center;gap:1rem;padding:.45rem 1.8rem .45rem .5rem;border-radius:999px;background:rgba(243,238,231,.9);color:var(--cocoa);
-  font:700 1.02rem/1 "Nunito",var(--sans);text-decoration:none;box-shadow:0 1rem 2.2rem rgba(0,0,0,.55),0 0 2rem rgba(217,188,133,.35);transition:transform .3s,box-shadow .3s,background .3s}
-.hero-cta:hover{background:#fff;transform:translateY(-3px)}
-.hero-cta .ic{width:2.75rem;height:2.75rem;border-radius:50%;background:var(--cocoa);color:var(--ivory);display:grid;place-items:center;transition:background .3s,transform .3s}
-.hero-cta:hover .ic{background:var(--gold);transform:rotate(45deg)}
-.hero-cta .ic svg{width:1.1rem;height:1.1rem}
-.hero-bottom{display:none;width:100%;justify-content:space-between;align-items:flex-end;gap:2rem}
-.hero-bottom p{font:400 .92rem/1.5 "Nunito",var(--sans);color:#C9BCAE;max-width:16rem}
-.hero-bottom .l{border-left:2px solid rgba(185,152,95,.7);padding-left:.9rem}
-.hero-bottom .r{border-right:2px solid rgba(185,152,95,.7);padding-right:.9rem;text-align:right;font-style:italic;max-width:20rem}
-@media(max-width:900px){
-  .hero-bottom{display:none}
-  .hero{--pw:106vw;--top:5rem;min-height:calc(var(--top) + var(--pw)*.5625*.49 + 26rem)}
-  .hero-people{bottom:auto;top:var(--top);width:106vw;left:50%}
-  .hero-cards{bottom:auto;top:calc(var(--top) + var(--pw)*.5625*.12);height:10rem;perspective:800px}
-  .hero-card{width:12.5rem;height:8.4rem;border-radius:1.1rem}
-  .hero-track{gap:.8rem;animation-duration:30s}
-  .hero-fade{height:66%;background:linear-gradient(to top,rgba(18,12,9,.97) 0%,rgba(18,12,9,.92) 45%,rgba(18,12,9,.55) 75%,rgba(18,12,9,0) 100%)}
-  .hero-glow .g1{width:26rem;height:26rem;top:30%}
-  .hero-glow .g2{width:34rem;height:34rem;top:30%}
-  .hero h1{font-size:clamp(1.7rem,7.2vw,2.4rem);max-width:21rem;margin-bottom:1rem}
-  .hero-sub{font-size:.98rem;margin-bottom:1.2rem}
-  .hero-cta{font-size:.92rem}.hero-cta .ic{width:2.4rem;height:2.4rem}
-}
-@media (prefers-reduced-motion:reduce){.hero-track,.hero-glow .g1{animation:none}}
-
-.arch{
-  position:relative;width:min(100%, 26rem);aspect-ratio:3/4;margin-inline:auto;
-  border-radius:999px 999px 0 0;
-  background:linear-gradient(165deg,#B6A08D 0%,#8D7767 45%,#5C4A3E 100%);
-}
-.arch::after{
-  content:"";position:absolute;inset:.9rem;border-radius:999px 999px 0 0;
-  border:1px solid rgba(185,152,95,.75);pointer-events:none;
-}
-
-/* Curvas (o sorriso) */
-.curved{
-  position:relative;z-index:1;margin-top:calc(var(--curve) * -1);
-  border-radius:50% 50% 0 0 / var(--curve) var(--curve) 0 0;
-}
-
-section{padding-block:clamp(4.5rem, 9vw, 8rem)}
-
-/* Tratamentos */
-.treatments{background:var(--ivory);padding-top:calc(var(--curve) + 3rem)}
-.treat-grid{display:grid;gap:3rem}
-@media(min-width:900px){
-  .treat-grid{grid-template-columns:.8fr 1.4fr;gap:5rem}
-  .treat-intro{position:sticky;top:3rem;align-self:start}
-}
-.treat-intro p{margin-top:1.4rem;color:var(--cocoa-soft);max-width:26rem}
-.svc{
-  position:relative;display:grid;gap:1rem 2rem;
-  grid-template-columns:1fr;
-  padding:2rem 0;text-decoration:none;
-  border-top:1px solid rgba(43,33,27,.18);
-}
-li:last-child > .svc{border-bottom:1px solid rgba(43,33,27,.18)}
-@media(min-width:640px){.svc{grid-template-columns:1fr auto;align-items:end}}
-.svc h3{font-size:clamp(1.55rem, 2.6vw, 2.1rem);transition:color .2s ease}
-.svc p{margin-top:.55rem;color:var(--cocoa-soft);max-width:36rem}
-.svc .svc-for{color:var(--cocoa);font-weight:500}
-.svc-cta{font-weight:600;font-size:.97rem;white-space:nowrap}
-.svc::after{
-  content:"";position:absolute;left:0;top:-1px;height:1px;width:100%;
-  background:var(--gold);transform:scaleX(0);transform-origin:left;
-  transition:transform .35s ease;
-}
-.svc:hover::after,.svc:focus-visible::after{transform:scaleX(1)}
-.svc:hover h3{color:var(--mocha)}
-
-/* Sobre */
-.about{background:var(--sand)}
-.about-grid{display:grid;gap:3.5rem;align-items:center}
-@media(min-width:900px){.about-grid{grid-template-columns:.85fr 1.15fr;gap:6rem}}
-.about .arch{background:linear-gradient(170deg,#C9B7A4 0%,#9C8672 55%,#6F5C4E 100%)}
-.about .slot-label{color:var(--ivory)}
-.about h2{margin-bottom:.6rem}
-.about .role{color:var(--cocoa-soft);margin-bottom:2rem}
-.about p + p{margin-top:1.2rem}
-.about .body{max-width:34rem}
-.about-head{max-width:42rem;margin:0 auto 3.5rem;text-align:center}
-.about-head h2{margin-bottom:1rem}
-.partners{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;max-width:40rem;margin-inline:auto}
-@media(min-width:700px){.partners{gap:3rem}}
-.partner{text-align:center;display:flex;flex-direction:column;align-items:center}
-.partner .arch{width:min(100%,13rem);margin-bottom:1.2rem}
-.partner h3{font:400 1.35rem/1.15 var(--serif)}
-.partner .role{color:var(--gold);letter-spacing:.06em;font-size:.92rem;margin:.35rem 0 1rem;text-transform:uppercase;font-weight:600}
-.partner p:not(.role){max-width:17rem;margin-bottom:1.3rem;font-size:.95rem}
-@media(max-width:600px){.partner h3{font-size:1.1rem}.partner .role{font-size:.7rem;letter-spacing:.04em}.partner p:not(.role){font-size:.84rem}.partner .btn{padding:.75rem .9rem;font-size:.82rem;text-align:center;line-height:1.2}}
-.partner .btn{margin-top:auto}
-
-/* Casos: carrossel 3D empilhado */
-.cases{background:var(--sand);color:var(--cocoa);padding-top:calc(var(--curve) + 0rem);overflow:hidden}
-.cases-head{display:grid;gap:1rem;margin:3.2rem auto 3.2rem;text-align:center;max-width:44rem}
-.cases-head p{opacity:.8;margin-inline:auto;max-width:34rem}
-.ba-static{cursor:default}
-.ba{
-  --position:50%;
-  position:relative;aspect-ratio:var(--ar,1/1);border-radius:2rem;overflow:hidden;
-  background:linear-gradient(170deg,#8D7767 0%,#5C4A3E 100%);
-  user-select:none;-webkit-user-select:none;cursor:ew-resize;touch-action:pan-y;
-}
-.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;-webkit-user-drag:none}
-.ba .ba-before{clip-path:polygon(0 0,var(--position) 0,var(--position) 100%,0 100%)}
-.ba-pill{
-  position:absolute;bottom:1rem;z-index:3;pointer-events:none;
-  background:rgba(43,33,27,.7);color:var(--ivory);
-  font-size:.8rem;font-weight:600;padding:.3rem .8rem;border-radius:999px;
-}
-.ba-pill.l{left:1rem}.ba-pill.r{right:1rem}
-.ba-line{
-  position:absolute;top:0;bottom:0;left:var(--position);width:2px;
-  background:var(--ivory);transform:translateX(-50%);z-index:4;pointer-events:none;
-}
-.ba-knob{
-  position:absolute;top:50%;left:50%;width:2.6rem;height:2.6rem;border-radius:50%;
-  background:var(--ivory);color:var(--cocoa);transform:translate(-50%,-50%);
-  display:flex;align-items:center;justify-content:center;
-  box-shadow:0 4px 16px rgba(0,0,0,.35);
-}
-.ba-knob svg{width:1.1rem;height:1.1rem;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
-.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;z-index:5;margin:0}
-.ba.dragging .ba-knob{transform:translate(-50%,-50%) scale(1.1)}
-.cases-foot{margin-top:3rem;font-size:.88rem;opacity:.7;max-width:46rem;margin-inline:auto;text-align:center}
-.cases-foot a{opacity:1}
-
-.marquee{position:absolute;top:calc(var(--curve) + .9rem);left:0;right:0;overflow:hidden;opacity:.55;pointer-events:none;
-  -webkit-mask-image:linear-gradient(90deg,transparent,#000 15%,#000 85%,transparent);mask-image:linear-gradient(90deg,transparent,#000 15%,#000 85%,transparent)}
-.marquee-track{display:flex;gap:2.6rem;width:max-content;animation:mq 50s linear infinite}
-.marquee span{display:inline-flex;align-items:center;gap:2.6rem;font:600 .78rem/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--mocha);white-space:nowrap}
-.marquee span::after{content:"";width:.42rem;height:.42rem;background:var(--gold);transform:rotate(45deg)}
-@keyframes mq{to{transform:translateX(-50%)}}
-.cases .wrap{padding-top:1.2rem}
-
-.deck{--stage-h:clamp(17rem,52svh,28rem);position:relative;width:min(100%,38rem);margin:0 auto;height:calc(var(--stage-h) + 9.4rem);perspective:1400px;outline:none}
-.deck-backdrop{position:absolute;inset:0;border-radius:2rem;background:linear-gradient(135deg,#D9BC85 0%,#B9985F 100%);
-  transform:translate(-1.3rem,-.9rem) rotate(-4.5deg) scale(.98);filter:drop-shadow(0 1rem 2.2rem rgba(185,152,95,.4));transition:background .6s,transform .6s cubic-bezier(.16,1,.3,1)}
-.deck[data-accent="taupe"] .deck-backdrop{background:linear-gradient(135deg,#B49A86 0%,#7A6454 100%);filter:drop-shadow(0 1rem 2.2rem rgba(111,92,78,.4))}
-.deck-cards{position:relative;width:100%;height:100%;z-index:2}
-.deck-card{position:absolute;inset:0;border-radius:2rem;background:var(--cocoa);color:var(--ivory);padding:1rem 1rem 1.1rem;display:flex;flex-direction:column;gap:.9rem;
-  box-shadow:0 1.4rem 3.2rem rgba(20,13,9,.45),inset 0 1px 0 rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.1);
-  opacity:0;visibility:hidden;transform:translate3d(0,0,-90px) scale(.9);
-  transition:transform .7s cubic-bezier(.16,1,.3,1),opacity .6s ease,visibility 0s .7s;cursor:pointer}
-.deck-card.active{opacity:1;visibility:visible;z-index:10;transform:rotateY(var(--tx,0deg)) rotateX(var(--ty,0deg));cursor:default;transition:transform .7s cubic-bezier(.16,1,.3,1),opacity .6s ease,visibility 0s}
-.deck-card.next{opacity:.7;visibility:visible;z-index:5;transform:translate3d(1.2rem,-.8rem,-30px) rotate(3deg);background:#231a15;transition:transform .7s cubic-bezier(.16,1,.3,1),opacity .6s ease,visibility 0s}
-.deck-card.prev{opacity:.4;visibility:visible;z-index:2;transform:translate3d(-1.2rem,.9rem,-60px) rotate(-3.5deg);background:#1c1410;transition:transform .7s cubic-bezier(.16,1,.3,1),opacity .6s ease,visibility 0s}
-.deck-card:not(.active) *{pointer-events:none}
-.deck-card:not(.active){pointer-events:auto}
-.deck-card:not(.active):hover{opacity:.9}
-.dk-stage{height:var(--stage-h);display:flex;align-items:center;justify-content:center}
-.deck-card .ba{width:min(100%,calc(var(--stage-h)*var(--arn,1)));border-radius:1.3rem;box-shadow:0 .6rem 1.6rem rgba(0,0,0,.35)}
-.dk-cap{display:flex;flex-direction:column;gap:.2rem;padding:0 .5rem;text-align:left}
-.dk-cap small{font:600 .72rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
-.dk-cap b{font:400 1.3rem/1.2 var(--serif);margin-top:.25rem}
-.dk-cap span{font-size:.88rem;opacity:.72;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.dk-prog{height:3px;border-radius:99px;background:rgba(255,255,255,.12);overflow:hidden;margin:auto .5rem 0}
-.dk-prog i{display:block;height:100%;width:0;background:linear-gradient(90deg,#D9BC85,#B9985F);box-shadow:0 0 10px rgba(217,188,133,.7);border-radius:99px}
-.deck-ctrl{display:flex;align-items:center;justify-content:center;gap:1.1rem;margin-top:2.2rem}
-.deck-arrow{width:2.9rem;height:2.9rem;border-radius:50%;border:1px solid rgba(43,33,27,.3);background:transparent;color:var(--cocoa);display:grid;place-items:center;cursor:pointer;transition:background .3s,color .3s,transform .3s}
-.deck-arrow:hover{background:var(--cocoa);color:var(--ivory);transform:scale(1.06)}
-.deck-arrow svg{width:1.1rem;height:1.1rem;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
-.deck-dots{display:flex;align-items:center;gap:.5rem}
-.deck-dots button{width:.55rem;height:.55rem;border-radius:50%;border:0;padding:0;background:rgba(43,33,27,.25);cursor:pointer;transition:width .4s,background .3s}
-.deck-dots button.on{width:1.6rem;border-radius:99px;background:var(--cocoa)}
-@media(max-width:600px){
-  .deck{--stage-h:clamp(16rem,46svh,24rem);width:calc(100% - 1.6rem);height:calc(var(--stage-h) + 9.6rem)}
-  .deck-backdrop{transform:translate(-.6rem,-.5rem) rotate(-4deg) scale(.98)}
-  .deck-card.next{transform:translate3d(.5rem,-.4rem,-15px) rotate(2deg)}
-  .deck-card.prev{transform:translate3d(-.5rem,.5rem,-30px) rotate(-2deg)}
-  .deck-card{border-radius:1.5rem;padding:.75rem .75rem 1rem}
-  .dk-cap b{font-size:1.15rem}
-  .deck-dots{gap:.4rem}.deck-dots button{width:.45rem;height:.45rem}.deck-dots button.on{width:1.2rem}
-}
-@media(prefers-reduced-motion:reduce){.marquee-track{animation:none}}
-
-/* Fotos reais nas curvas */
-.arch{overflow:hidden}
-.arch img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 18%}
-.arch::after{z-index:1}
-
-/* Equipe */
-.growth{padding:5rem 0;background:var(--ivory)}
-.growth h2{text-align:center}
-.growth .lead{text-align:center;max-width:36rem;margin:1rem auto 2.5rem;color:var(--cocoa-soft)}
-.gcar{max-width:34rem;margin-inline:auto}
-.gcar-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;gap:1rem;-webkit-overflow-scrolling:touch;scrollbar-width:none;border-radius:2rem}
-.gcar-track::-webkit-scrollbar{display:none}
-.gcar-track:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
-.gslide{flex:0 0 100%;scroll-snap-align:center;margin:0}
-.gslide img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 30%;border-radius:2rem;display:block}
-.gslide figcaption{margin-top:.8rem;text-align:center;font-size:.95rem;color:var(--cocoa-soft)}
-.gcar-nav{display:flex;align-items:center;justify-content:center;gap:1.2rem;margin-top:1.2rem}
-.gcar-nav>button{width:2.8rem;height:2.8rem;border-radius:50%;border:1px solid rgba(43,33,27,.3);background:transparent;color:var(--cocoa);display:grid;place-items:center;cursor:pointer;transition:background .2s,color .2s}
-.gcar-nav>button:hover{background:var(--cocoa);color:var(--ivory)}
-.gcar-nav svg{width:1.2rem;height:1.2rem}
-.gdots{display:flex;gap:.6rem}
-.gdots button{width:.6rem;height:.6rem;border-radius:50%;border:0;padding:0;background:rgba(43,33,27,.25);cursor:pointer;transition:background .2s,transform .2s}
-.gdots button.on{background:var(--gold);transform:scale(1.3)}
-.team{margin-top:2.6rem;padding-top:1.6rem;border-top:1px solid rgba(43,33,27,.2);display:flex;align-items:center;gap:1.1rem}
-.team img{width:5rem;height:5rem;border-radius:50%;object-fit:cover}
-.team b{display:block;font:400 1.3rem/1.2 var(--serif)}
-.team span{font-size:.95rem;color:var(--cocoa-soft)}
-
-/* Atendimento */
-.process{background:var(--mocha);color:var(--ivory)}
-.process-grid{display:grid;gap:3rem}
-@media(min-width:900px){.process-grid{grid-template-columns:.8fr 1.2fr;gap:6rem}.process-intro{position:sticky;top:3rem;align-self:start}}
-.process-intro p{margin-top:1.2rem;opacity:.9;max-width:24rem}
-.steps{position:relative;display:grid;gap:2.6rem}
-.steps::before{content:"";position:absolute;left:1.35rem;top:.6rem;bottom:.6rem;width:1px;background:rgba(185,152,95,.6)}
-.steps li{position:relative;display:grid;grid-template-columns:2.7rem 1fr;gap:1.4rem;align-items:start}
-.steps .n{width:2.7rem;height:2.7rem;border-radius:50%;background:var(--gold);color:var(--cocoa);display:grid;place-items:center;font:400 1.3rem/1 var(--serif);position:relative;z-index:1}
-.steps h3{font-size:1.5rem;margin:.2rem 0 .4rem}
-.steps p{opacity:.9;max-width:30rem}
-
-/* Dúvidas */
-.faq{background:var(--sand)}
-.faq-grid{display:grid;gap:3rem}
-@media(min-width:900px){.faq-grid{grid-template-columns:.8fr 1.4fr;gap:5rem}}
-.faq details{border-top:1px solid rgba(43,33,27,.22)}
-.faq details:last-child{border-bottom:1px solid rgba(43,33,27,.22)}
-.faq summary{
-  list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:1.5rem;align-items:center;
-  padding:1.5rem 0;font:400 clamp(1.25rem,2vw,1.55rem)/1.3 var(--serif);
-}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{
-  content:"+";font:400 1.8rem/1 var(--sans);color:var(--mocha);
-  transition:transform .25s ease;flex:none;
-}
-.faq details[open] summary::after{transform:rotate(45deg)}
-.faq details p{padding:0 3rem 1.7rem 0;color:var(--cocoa-soft);max-width:38rem}
-
-/* CTA final: foco no sorriso, tudo dentro do cartão de imagem */
-.cta{background:var(--mocha);color:#fff;text-align:center;padding-top:calc(var(--curve) + 3rem);padding-bottom:calc(var(--curve) + 3.5rem)}
-.cta-card{position:relative;isolation:isolate;overflow:hidden;border-radius:2rem;min-height:clamp(30rem,46vw,40rem);
-  display:flex;flex-direction:column;justify-content:center;gap:2.6rem;padding:3rem 2rem 2.4rem;background:var(--cocoa);box-shadow:0 1.6rem 3.6rem rgba(20,13,9,.35)}
-.cta-bg{position:absolute;inset:0;z-index:-1;background:var(--cocoa);overflow:hidden}
-.cta-bg img{position:absolute;max-width:none;width:100%;height:100%;object-fit:cover;left:0;top:0}
-.cta-blurred{filter:blur(7px)}
-.cta-blur{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,13,9,.16) 0%,rgba(20,13,9,.05) 40%,rgba(20,13,9,.2) 62%,rgba(20,13,9,.75) 100%)}
-.cta-sharp{display:none}
-.cta-card.fx .cta-sharp{display:block}
-.cta-ring{position:absolute;display:none;border:1px solid rgba(255,255,255,.55);background:rgba(255,255,255,.05);box-shadow:0 1.2rem 3rem rgba(0,0,0,.3);pointer-events:none}
-.cta-card.fx .cta-ring{display:block}
-.cta-card.fx .cta-window{border-color:transparent;box-shadow:none}
-.cta-card.fx .cta-window img{opacity:0}
-.cta-stage{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:clamp(.7rem,2.6vw,2.6rem)}
-.cta h2{font:500 clamp(1.05rem,2.8vw,2.6rem)/1.12 var(--sans);letter-spacing:-.015em;margin:0;text-shadow:0 2px 18px rgba(0,0,0,.55);text-wrap:balance}
-.cta h2 em{font:italic 400 1.08em/1 var(--serif);letter-spacing:0}
-.cta-l{text-align:right}.cta-r{text-align:left}
-.cta-window{margin:0;width:clamp(6.6rem,15vw,14.5rem);aspect-ratio:1/1.12;border-radius:1.2rem;overflow:hidden;border:1px solid rgba(255,255,255,.55)}
-.cta-window img{width:100%;height:100%;object-fit:cover;display:block}
-.cta-foot{display:flex;flex-direction:column;align-items:center}
-.cta .btn{padding:.7rem 1.4rem;font-size:.92rem}
-.cta p{margin:0 auto 1.2rem;max-width:27rem;font-size:.86rem;line-height:1.55;opacity:.92;text-shadow:0 1px 12px rgba(0,0,0,.6)}
-.cta-note{display:block;margin-top:1rem;font-size:.74rem;opacity:.78;text-shadow:0 1px 10px rgba(0,0,0,.6)}
-@media(max-width:600px){
-  .cta{padding-inline:0}
-  .cta-card{border-radius:1.5rem;min-height:25rem;gap:1.6rem;padding:2rem .9rem 1.4rem}
-  .cta-window{border-radius:.9rem}
-  .cta p{font-size:.76rem;margin-bottom:.9rem}
-  .cta .btn{padding:.62rem 1.1rem;font-size:.84rem}
-  .cta-note{font-size:.66rem;margin-top:.8rem}
-}
-
-/* Rodapé */
-.footer{background:var(--cocoa);color:var(--ivory);padding:calc(var(--curve) + 3.5rem) 0 5.5rem}
-.footer-grid{display:grid;gap:2.5rem}
-@media(min-width:800px){.footer-grid{grid-template-columns:1.2fr 1fr 1fr;gap:4rem}}
-.footer .brand img{width:8.5rem}
-.footer h3{font:600 .95rem/1.3 var(--sans);margin-bottom:.8rem}
-.footer p,.footer a{font-size:.97rem;opacity:.88}
-.footer a{text-underline-offset:.3rem}
-.legal{margin-top:3rem;padding-top:1.6rem;border-top:1px solid rgba(243,238,231,.18);font-size:.85rem;opacity:.7;display:grid;gap:.5rem}
-
-/* WhatsApp flutuante */
-.float-wa{
-  position:fixed;right:1.1rem;bottom:1.1rem;z-index:20;
-  box-shadow:0 8px 24px rgba(43,33,27,.28);
-  padding:.9rem 1.3rem;
-}
-@media(max-width:520px){.float-wa{left:1.1rem;right:1.1rem}}
-
-/* Movimento: entrada do hero + revelação ao rolar (só com JS e sem reduced-motion) */
-@media(prefers-reduced-motion:no-preference){
-  .hero-kicker,.hero h1,.hero-sub,.hero-cta{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
-  .hero-kicker{animation-delay:.1s}.hero h1{animation-delay:.22s}.hero-sub{animation-delay:.36s}.hero-cta{animation-delay:.5s}
-  .hero-people{animation:heroIn 1.4s .3s cubic-bezier(.2,.7,.2,1) both}
-  .hero-cards{animation:fadeIn 1.6s .6s ease both}
-  .js [data-r]{opacity:0;transform:translateY(1.6rem);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:calc(var(--i,0)*90ms)}
-  .js [data-r].in{opacity:1;transform:none}
-  .js .deck[data-r]{transform:translateY(2rem) scale(.96)}
-  .js .deck[data-r].in{transform:none}
-  .js .steps[data-r]{opacity:1;transform:none}
-  .js .steps::before{transform:scaleY(0);transform-origin:top;transition:transform 1.4s .2s cubic-bezier(.2,.7,.2,1)}
-  .js .steps.in::before{transform:scaleY(1)}
-  .js .steps .n{transform:scale(.4);opacity:0;transition:transform .6s cubic-bezier(.3,1.4,.4,1),opacity .4s;transition-delay:calc(var(--i,0)*220ms + .3s)}
-  .js .steps.in .n{transform:none;opacity:1}
-  .partner .arch{transition:transform .7s cubic-bezier(.2,.7,.2,1)}.partner:hover .arch{transform:translateY(-6px)}
-  .svc{transition:transform .35s cubic-bezier(.2,.7,.2,1)}.svc:hover{transform:translateX(6px)}
-  .btn,.hero-cta{transition:transform .3s cubic-bezier(.2,.7,.2,1),background .3s,box-shadow .3s}
-  .btn:hover{transform:translateY(-2px)}
-}
-@keyframes heroIn{from{opacity:0;transform:translateX(-50%) translateY(3rem) scale(.96)}to{opacity:1;transform:translateX(-50%)}}
-@keyframes fadeIn{from{opacity:0}to{opacity:1}}
-@keyframes rise{from{opacity:0;transform:translateY(1.4rem)}to{opacity:1;transform:none}}
-@keyframes settle{from{opacity:0;transform:translateY(2rem) scale(.97)}to{opacity:1;transform:none}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
-
-/* Formas e textura (sutis) */
-:root{--d-arch-g:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20320%20400%27%3E%3Cpath%20d%3D%27M20%20400V170A140%20140%200%200%201%20300%20170V400%27%20fill%3D%27none%27%20stroke%3D%27%23B9985F%27%20stroke-width%3D%271.2%27%2F%3E%3Cpath%20d%3D%27M46%20400V170A114%20114%200%200%201%20274%20170V400%27%20fill%3D%27none%27%20stroke%3D%27%23B9985F%27%20stroke-width%3D%271.2%27%2F%3E%3Cpath%20d%3D%27M72%20400V170A88%2088%200%200%201%20248%20170V400%27%20fill%3D%27none%27%20stroke%3D%27%23B9985F%27%20stroke-width%3D%271.2%27%2F%3E%3C%2Fsvg%3E");--d-arch-i:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20320%20400%27%3E%3Cpath%20d%3D%27M20%20400V170A140%20140%200%200%201%20300%20170V400%27%20fill%3D%27none%27%20stroke%3D%27%23F3EEE7%27%20stroke-width%3D%271.2%27%2F%3E%3Cpath%20d%3D%27M46%20400V170A114%20114%200%200%201%20274%20170V400%27%20fill%3D%27none%27%20stroke%3D%27%23F3EEE7%27%20stroke-width%3D%271.2%27%2F%3E%3Cpath%20d%3D%27M72%20400V170A88%2088%200%200%201%20248%20170V400%27%20fill%3D%27none%27%20stroke%3D%27%23F3EEE7%27%20stroke-width%3D%271.2%27%2F%3E%3C%2Fsvg%3E");--d-ring-g:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20400%20400%27%3E%3Ccircle%20cx%3D%27200%27%20cy%3D%27200%27%20r%3D%2770%27%20fill%3D%27none%27%20stroke%3D%27%23B9985F%27%20stroke-width%3D%271.1%27%2F%3E%3Ccircle%20cx%3D%27200%27%20cy%3D%27200%27%20r%3D%27110%27%20fill%3D%27none%27%20stroke%3D%27%23B9985F%27%20stroke-width%3D%271.1%27%2F%3E%3Ccircle%20cx%3D%27200%27%20cy%3D%27200%27%20r%3D%27150%27%20fill%3D%27none%27%20stroke%3D%27%23B9985F%27%20stroke-width%3D%271.1%27%2F%3E%3Ccircle%20cx%3D%27200%27%20cy%3D%27200%27%20r%3D%27190%27%20fill%3D%27none%27%20stroke%3D%27%23B9985F%27%20stroke-width%3D%271.1%27%2F%3E%3C%2Fsvg%3E");--d-ring-i:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20400%20400%27%3E%3Ccircle%20cx%3D%27200%27%20cy%3D%27200%27%20r%3D%2770%27%20fill%3D%27none%27%20stroke%3D%27%23F3EEE7%27%20stroke-width%3D%271.1%27%2F%3E%3Ccircle%20cx%3D%27200%27%20cy%3D%27200%27%20r%3D%27110%27%20fill%3D%27none%27%20stroke%3D%27%23F3EEE7%27%20stroke-width%3D%271.1%27%2F%3E%3Ccircle%20cx%3D%27200%27%20cy%3D%27200%27%20r%3D%27150%27%20fill%3D%27none%27%20stroke%3D%27%23F3EEE7%27%20stroke-width%3D%271.1%27%2F%3E%3Ccircle%20cx%3D%27200%27%20cy%3D%27200%27%20r%3D%27190%27%20fill%3D%27none%27%20stroke%3D%27%23F3EEE7%27%20stroke-width%3D%271.1%27%2F%3E%3C%2Fsvg%3E");--d-spark-g:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%3E%3Cpath%20d%3D%27M12%200C13%208%2016%2011%2024%2012C16%2013%2013%2016%2012%2024C11%2016%208%2013%200%2012C8%2011%2011%208%2012%200Z%27%20fill%3D%27%23B9985F%27%2F%3E%3C%2Fsvg%3E");--d-spark-i:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%3E%3Cpath%20d%3D%27M12%200C13%208%2016%2011%2024%2012C16%2013%2013%2016%2012%2024C11%2016%208%2013%200%2012C8%2011%2011%208%2012%200Z%27%20fill%3D%27%23F3EEE7%27%2F%3E%3C%2Fsvg%3E");--d-noise:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27220%27%20height%3D%27220%27%3E%3Cfilter%20id%3D%27n%27%3E%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%27.85%27%20numOctaves%3D%272%27%20stitchTiles%3D%27stitch%27%2F%3E%3CfeColorMatrix%20type%3D%27saturate%27%20values%3D%270%27%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%27100%25%27%20height%3D%27100%25%27%20filter%3D%27url%28%23n%29%27%2F%3E%3C%2Fsvg%3E")}
-body::after{content:"";position:fixed;inset:0;z-index:70;pointer-events:none;background:var(--d-noise);opacity:.07}
-.treatments,.about,.growth,.faq,.process,.footer{position:relative;overflow:hidden}
-.treatments::before,.treatments::after,.cases::before,.cases::after,.about::before,.about::after,.growth::before,.growth::after,
-.faq::before,.faq::after,.process::before,.process::after,.cta::before,.cta::after,.footer::before{content:"";position:absolute;pointer-events:none;z-index:0;background-repeat:no-repeat;background-size:contain}
-.treatments>.wrap,.about>.wrap,.growth>.wrap,.faq>.wrap,.process>.wrap,.cases>.wrap,.cta>.wrap,.footer>.wrap{position:relative;z-index:1}
-.growth>*:not(.wrap){position:relative;z-index:1}
-.treatments::before{right:-3rem;top:7rem;width:21rem;height:26.25rem;background-image:var(--d-arch-g);opacity:.4}
-.treatments::after{left:-11rem;bottom:-7rem;width:27rem;height:27rem;background-image:var(--d-ring-g);opacity:.32}
-.cases::before{left:-9rem;top:14rem;width:25rem;height:25rem;background-image:var(--d-ring-g);opacity:.4}
-.cases::after{right:-3rem;bottom:5rem;width:19rem;height:23.75rem;background-image:var(--d-arch-g);opacity:.4}
-.about::before{left:-4rem;bottom:-2rem;width:20rem;height:25rem;background-image:var(--d-arch-g);opacity:.38}
-.about::after{right:-9rem;top:-6rem;width:26rem;height:26rem;background-image:var(--d-ring-g);opacity:.34}
-.growth::before{right:-10rem;bottom:-8rem;width:28rem;height:28rem;background-image:var(--d-ring-g);opacity:.3}
-.growth::after{inset:0;background-image:var(--d-spark-g),var(--d-spark-g),var(--d-spark-g);background-size:16px,11px,14px;background-position:9% 22%,92% 38%,16% 82%;opacity:.55}
-.process::before{left:-5rem;top:-3rem;width:20rem;height:25rem;background-image:var(--d-arch-i);opacity:.1}
-.process::after{right:-9rem;bottom:-9rem;width:28rem;height:28rem;background-image:var(--d-ring-i);opacity:.1}
-.faq::before{right:-4rem;top:3rem;width:19rem;height:23.75rem;background-image:var(--d-arch-g);opacity:.36}
-.faq::after{inset:0;background-image:var(--d-spark-g),var(--d-spark-g);background-size:14px,10px;background-position:7% 70%,60% 12%;opacity:.5}
-.cta::before{left:-8rem;bottom:-6rem;width:24rem;height:24rem;background-image:var(--d-ring-i);opacity:.1}
-.cta::after{right:-4rem;top:2rem;width:16rem;height:20rem;background-image:var(--d-arch-i);opacity:.09}
-.footer::before{right:-8rem;top:-4rem;width:26rem;height:26rem;background-image:var(--d-ring-i);opacity:.07}
-@media(max-width:700px){.treatments::before,.cases::after,.faq::before{width:12rem;height:15rem}.treatments::after,.cases::before,.about::after,.growth::before,.process::after,.cta::before,.footer::before{width:15rem;height:15rem}}
-</style>
 </head>
 <body>
 
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="#topo" aria-label="Cintra Odontologia e Estética">
+    <a class="brand" href="index.html" aria-label="Cintra Odontologia e Estética, página inicial">
       <img src="logo-cintra.png" alt="Cintra Odontologia &amp; Estética" width="596" height="174">
     </a>
-    <nav class="nav" aria-label="Principal">
-      <a href="#tratamentos">Tratamentos</a>
-      <a href="#dra-isabelle">Sobre</a>
-      <a href="#casos">Casos</a>
-      <a href="#duvidas">Dúvidas</a>
-    </nav>
-    <a class="btn btn-light" data-wa="Olá! Gostaria de agendar uma avaliação na Cintra Odontologia." href="https://www.instagram.com/cintraodontologia_/">Agendar avaliação</a>
+    <nav class="nav" id="menu" aria-label="Principal"><a href="index.html" aria-current="page">Início</a><a href="sorriso.html">Sorriso</a><a href="estetica-facial.html">Estética facial</a><a href="implantes.html">Implantes</a><a href="socias.html">Sócias</a><a href="resultados.html">Resultados</a></nav>
+    <div class="hdr-right">
+      <a class="btn btn-light" data-wa="Olá! Gostaria de agendar uma avaliação na Cintra Odontologia." href="https://www.instagram.com/cintraodontologia_/">Agendar avaliação</a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span></button>
+    </div>
   </div>
 </header>
 
 <main id="topo">
-
 <section class="hero" id="hero">
   <div class="hero-vignette"></div>
   <div class="hero-lines"></div>
@@ -517,190 +55,22 @@ body::after{content:"";position:fixed;inset:0;z-index:70;pointer-events:none;bac
     <div class="hero-main">
       <p class="hero-kicker"><b>Cintra Odontologia &amp; Estética</b>, na Vila Curuçá</p>
       <h1>Realce o seu sorriso,<br><em>sem perder a naturalidade.</em></h1>
-      <p class="hero-sub">Lentes, harmonização facial e implantes, com planejamento individual feito pelas sócias Isabelle e Karen Cintra.</p>
+      <p class="hero-sub">Lentes, estética facial e implantes, com planejamento individual feito pelas sócias Isabelle e Karen Cintra.</p>
       <a class="hero-cta" data-wa="Olá! Gostaria de agendar uma avaliação na Cintra Odontologia." href="https://www.instagram.com/cintraodontologia_/">
         <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
         Agendar minha avaliação
       </a>
     </div>
     <div class="hero-bottom">
-      <p class="l">Lentes, harmonização facial e implantes com planejamento individual.</p>
+      <p class="l">Lentes, estética facial e implantes com planejamento individual.</p>
       <p class="r">Cuidado próximo, resultado com a sua cara.</p>
     </div>
   </div>
 </section>
 
-<section class="cases curved" id="casos">
-  <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>Lentes em resina</span><span>Lentes em porcelana</span><span>Gengivoplastia</span><span>Harmonização facial</span><span>Implantes e coroas</span><span>Clareamento</span><span>Toxina botulínica</span><span>Preenchimento labial</span><span>Lentes em resina</span><span>Lentes em porcelana</span><span>Gengivoplastia</span><span>Harmonização facial</span><span>Implantes e coroas</span><span>Clareamento</span><span>Toxina botulínica</span><span>Preenchimento labial</span><span>Lentes em resina</span><span>Lentes em porcelana</span><span>Gengivoplastia</span><span>Harmonização facial</span><span>Implantes e coroas</span><span>Clareamento</span><span>Toxina botulínica</span><span>Preenchimento labial</span><span>Lentes em resina</span><span>Lentes em porcelana</span><span>Gengivoplastia</span><span>Harmonização facial</span><span>Implantes e coroas</span><span>Clareamento</span><span>Toxina botulínica</span><span>Preenchimento labial</span></div></div>
-  <div class="wrap">
-    <div class="cases-head">
-      <h2>Resultados reais de pacientes da Cintra</h2>
-      <p>Arraste a imagem para comparar o antes e o depois. Cada resultado depende de uma avaliação individual e varia de pessoa para pessoa.</p>
-    </div>
-    <div class="deck" id="deck" tabindex="0" role="region" aria-roledescription="carrossel" aria-label="Casos de antes e depois">
-      <div class="deck-backdrop" aria-hidden="true"></div>
-      <div class="deck-cards">
-        <article class="deck-card" data-i="0" data-accent="gold" aria-label="Caso 1 de 11">
-          <div class="dk-stage">
-            <div class="ba" data-ba style="--ar:1/1;--arn:1.0000">
-            <img src="caso1-depois.jpg" alt="Depois: Lentes em resina e coroas sobre implantes" loading="lazy">
-            <img class="ba-before" src="caso1-antes.jpg" alt="Antes: Lentes em resina e coroas sobre implantes" loading="lazy">
-            <span class="ba-pill l">Antes</span>
-            <span class="ba-pill r">Depois</span>
-            <div class="ba-line"><div class="ba-knob"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div></div>
-            <input type="range" min="0" max="100" value="50" aria-label="Comparar antes e depois do caso de lentes em resina e coroas">
-          </div>
-          </div>
-          <div class="dk-cap"><small>Sorriso · 01/11</small><b>Lentes em resina e coroas sobre implantes</b><span>Troca de coroas antigas por um sorriso com cor, formato e tamanho planejados.</span></div>
-          <div class="dk-prog"><i></i></div>
-        </article>
-<article class="deck-card" data-i="1" data-accent="gold" aria-label="Caso 2 de 11">
-          <div class="dk-stage">
-            <div class="ba" data-ba style="--ar:1/1;--arn:1.0000">
-            <img src="caso2-depois.jpg" alt="Depois: Fechamento de espaço com resina" loading="lazy">
-            <img class="ba-before" src="caso2-antes.jpg" alt="Antes: Fechamento de espaço com resina" loading="lazy">
-            <span class="ba-pill l">Antes</span>
-            <span class="ba-pill r">Depois</span>
-            <div class="ba-line"><div class="ba-knob"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div></div>
-            <input type="range" min="0" max="100" value="50" aria-label="Comparar antes e depois do caso de fechamento de espaço">
-          </div>
-          </div>
-          <div class="dk-cap"><small>Sorriso · 02/11</small><b>Fechamento de espaço com resina</b><span>Acréscimo em resina para fechar o espaço entre os dentes da frente.</span></div>
-          <div class="dk-prog"><i></i></div>
-        </article>
-<article class="deck-card" data-i="2" data-accent="gold" aria-label="Caso 3 de 11">
-          <div class="dk-stage">
-            <div class="ba" data-ba style="--ar:436/544;--arn:0.8015">
-            <img src="sorriso-depois.jpg" alt="Depois: Estética do sorriso" loading="lazy">
-            <img class="ba-before" src="sorriso-antes.jpg" alt="Antes: Estética do sorriso" loading="lazy">
-            <span class="ba-pill l">Antes</span>
-            <span class="ba-pill r">Depois</span>
-            <div class="ba-line"><div class="ba-knob"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div></div>
-            <input type="range" min="0" max="100" value="50" aria-label="Comparar antes e depois do caso de estética do sorriso">
-          </div>
-          </div>
-          <div class="dk-cap"><small>Sorriso · 03/11</small><b>Estética do sorriso</b><span>Planejamento individual da cor, do formato e da proporção dos dentes.</span></div>
-          <div class="dk-prog"><i></i></div>
-        </article>
-<article class="deck-card" data-i="3" data-accent="gold" aria-label="Caso 4 de 11">
-          <div class="dk-stage">
-            <div class="ba" data-ba style="--ar:511/712;--arn:0.7177">
-            <img src="colagem-depois.jpg" alt="Depois: Sorriso e rosto" loading="lazy">
-            <img class="ba-before" src="colagem-antes.jpg" alt="Antes: Sorriso e rosto" loading="lazy">
-            <span class="ba-pill l">Antes</span>
-            <span class="ba-pill r">Depois</span>
-            <div class="ba-line"><div class="ba-knob"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div></div>
-            <input type="range" min="0" max="100" value="50" aria-label="Comparar antes e depois do caso de sorriso e rosto">
-          </div>
-          </div>
-          <div class="dk-cap"><small>Sorriso · 04/11</small><b>Sorriso e rosto</b><span>Fotos de rosto e de sorriso do mesmo caso.</span></div>
-          <div class="dk-prog"><i></i></div>
-        </article>
-<article class="deck-card" data-i="4" data-accent="gold" aria-label="Caso 5 de 11">
-          <div class="dk-stage">
-            <div class="ba" data-ba style="--ar:1/1;--arn:1.0000">
-            <img src="clareamento-depois.jpg" alt="Depois: Clareamento" loading="lazy">
-            <img class="ba-before" src="clareamento-antes.jpg" alt="Antes: Clareamento" loading="lazy">
-            <span class="ba-pill l">Antes</span>
-            <span class="ba-pill r">Depois</span>
-            <div class="ba-line"><div class="ba-knob"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div></div>
-            <input type="range" min="0" max="100" value="50" aria-label="Comparar antes e depois do caso de clareamento">
-          </div>
-          </div>
-          <div class="dk-cap"><small>Sorriso · 05/11</small><b>Clareamento</b><span>Fotos sem filtro e na mesma luz.</span></div>
-          <div class="dk-prog"><i></i></div>
-        </article>
-<article class="deck-card" data-i="5" data-accent="gold" aria-label="Caso 6 de 11">
-          <div class="dk-stage">
-            <div class="ba" data-ba style="--ar:1/1;--arn:1.0000">
-            <img src="reab-depois.jpg" alt="Depois: Reabilitação do sorriso" loading="lazy">
-            <img class="ba-before" src="reab-antes.jpg" alt="Antes: Reabilitação do sorriso" loading="lazy">
-            <span class="ba-pill l">Antes</span>
-            <span class="ba-pill r">Depois</span>
-            <div class="ba-line"><div class="ba-knob"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div></div>
-            <input type="range" min="0" max="100" value="50" aria-label="Comparar antes e depois do caso de reabilitação do sorriso">
-          </div>
-          </div>
-          <div class="dk-cap"><small>Sorriso · 06/11</small><b>Reabilitação do sorriso</b><span>Recuperação da forma e da cor dos dentes, com planejamento individual.</span></div>
-          <div class="dk-prog"><i></i></div>
-        </article>
-<article class="deck-card" data-i="6" data-accent="taupe" aria-label="Caso 7 de 11">
-          <div class="dk-stage">
-            <div class="ba" data-ba style="--ar:418/208;--arn:2.0096">
-            <img src="queixo-depois.jpg" alt="Depois: Harmonização facial" loading="lazy">
-            <img class="ba-before" src="queixo-antes.jpg" alt="Antes: Harmonização facial" loading="lazy">
-            <span class="ba-pill l">Antes</span>
-            <span class="ba-pill r">Depois</span>
-            <div class="ba-line"><div class="ba-knob"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div></div>
-            <input type="range" min="0" max="100" value="50" aria-label="Comparar antes e depois do caso de harmonização do queixo e pescoço">
-          </div>
-          </div>
-          <div class="dk-cap"><small>Rosto · 07/11</small><b>Harmonização facial</b><span>Região do queixo e do pescoço.</span></div>
-          <div class="dk-prog"><i></i></div>
-        </article>
-<article class="deck-card" data-i="7" data-accent="taupe" aria-label="Caso 8 de 11">
-          <div class="dk-stage">
-            <div class="ba" data-ba style="--ar:304/152;--arn:2.0000">
-            <img src="botox2-depois.jpg" alt="Depois: Toxina botulínica" loading="lazy">
-            <img class="ba-before" src="botox2-antes.jpg" alt="Antes: Toxina botulínica" loading="lazy">
-            <span class="ba-pill l">Antes</span>
-            <span class="ba-pill r">Depois</span>
-            <div class="ba-line"><div class="ba-knob"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div></div>
-            <input type="range" min="0" max="100" value="50" aria-label="Comparar antes e depois da toxina botulínica na testa">
-          </div>
-          </div>
-          <div class="dk-cap"><small>Rosto · 08/11</small><b>Toxina botulínica</b><span>Atendimento da Dra. Karen Cintra.</span></div>
-          <div class="dk-prog"><i></i></div>
-        </article>
-<article class="deck-card" data-i="8" data-accent="taupe" aria-label="Caso 9 de 11">
-          <div class="dk-stage">
-            <div class="ba" data-ba style="--ar:432/360;--arn:1.2000">
-            <img src="botox-depois.jpg" alt="Depois: Toxina botulínica" loading="lazy">
-            <img class="ba-before" src="botox-antes.jpg" alt="Antes: Toxina botulínica" loading="lazy">
-            <span class="ba-pill l">Antes</span>
-            <span class="ba-pill r">Depois</span>
-            <div class="ba-line"><div class="ba-knob"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div></div>
-            <input type="range" min="0" max="100" value="50" aria-label="Comparar antes e depois da aplicação de toxina botulínica">
-          </div>
-          </div>
-          <div class="dk-cap"><small>Rosto · 09/11</small><b>Toxina botulínica</b><span>Atendimento da Dra. Karen Cintra.</span></div>
-          <div class="dk-prog"><i></i></div>
-        </article>
-<article class="deck-card" data-i="9" data-accent="taupe" aria-label="Caso 10 de 11">
-          <div class="dk-stage">
-            <div class="ba" data-ba style="--ar:1/1;--arn:1.0000">
-            <img src="labios2-depois.jpg" alt="Depois: Preenchimento labial" loading="lazy">
-            <img class="ba-before" src="labios2-antes.jpg" alt="Antes: Preenchimento labial" loading="lazy">
-            <span class="ba-pill l">Antes</span>
-            <span class="ba-pill r">Depois</span>
-            <div class="ba-line"><div class="ba-knob"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div></div>
-            <input type="range" min="0" max="100" value="50" aria-label="Comparar antes e depois do preenchimento labial">
-          </div>
-          </div>
-          <div class="dk-cap"><small>Rosto · 10/11</small><b>Preenchimento labial</b><span>Mais volume e definição nos lábios.</span></div>
-          <div class="dk-prog"><i></i></div>
-        </article>
-<article class="deck-card" data-i="10" data-accent="taupe" aria-label="Caso 11 de 11">
-          <div class="dk-stage">
-            <div class="ba ba-static" style="--arn:0.7968">
-            <img src="labios-resultado.jpg" alt="Resultado de preenchimento labial com contorno delicado e harmonia" loading="lazy">
-          </div>
-          </div>
-          <div class="dk-cap"><small>Rosto · 11/11</small><b>Preenchimento labial</b><span>Mais definição e contorno delicado, respeitando as características do lábio da paciente.</span></div>
-          <div class="dk-prog"><i></i></div>
-        </article>
-      </div>
-    </div>
-    <div class="deck-ctrl">
-      <button type="button" class="deck-arrow" id="deckPrev" aria-label="Caso anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg></button>
-      <div class="deck-dots" id="deckDots"><button type="button" aria-label="Caso 1"></button><button type="button" aria-label="Caso 2"></button><button type="button" aria-label="Caso 3"></button><button type="button" aria-label="Caso 4"></button><button type="button" aria-label="Caso 5"></button><button type="button" aria-label="Caso 6"></button><button type="button" aria-label="Caso 7"></button><button type="button" aria-label="Caso 8"></button><button type="button" aria-label="Caso 9"></button><button type="button" aria-label="Caso 10"></button><button type="button" aria-label="Caso 11"></button></div>
-      <button type="button" class="deck-arrow" id="deckNext" aria-label="Próximo caso"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></button>
-    </div>
-    <p class="cases-foot">Casos atendidos pela Dra. Isabelle Cintra (CRO-SP [inserir]) e pela Dra. Karen Cintra (CRO-SP [inserir]). Imagens publicadas com autorização dos pacientes. <a class="textlink" href="https://www.instagram.com/cintraodontologia_/" target="_blank" rel="noopener">Ver mais casos no Instagram</a></p>
-  </div>
-</section>
 
-<section class="treatments curved" id="tratamentos">
+<section class="treatments curved" id="tratamentos" style="padding-top:calc(var(--curve) + 4.4rem)">
+  <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>Lentes em resina</span><span>Lentes em porcelana</span><span>Gengivoplastia</span><span>Estética facial</span><span>Implantes e coroas</span><span>Clareamento</span><span>Toxina botulínica</span><span>Preenchimento labial</span><span>Lentes em resina</span><span>Lentes em porcelana</span><span>Gengivoplastia</span><span>Estética facial</span><span>Implantes e coroas</span><span>Clareamento</span><span>Toxina botulínica</span><span>Preenchimento labial</span><span>Lentes em resina</span><span>Lentes em porcelana</span><span>Gengivoplastia</span><span>Estética facial</span><span>Implantes e coroas</span><span>Clareamento</span><span>Toxina botulínica</span><span>Preenchimento labial</span><span>Lentes em resina</span><span>Lentes em porcelana</span><span>Gengivoplastia</span><span>Estética facial</span><span>Implantes e coroas</span><span>Clareamento</span><span>Toxina botulínica</span><span>Preenchimento labial</span></div></div>
   <div class="wrap treat-grid">
     <div class="treat-intro">
       <h2>O que podemos fazer pelo seu sorriso e pelo seu rosto</h2>
@@ -708,72 +78,86 @@ body::after{content:"";position:fixed;inset:0;z-index:70;pointer-events:none;bac
     </div>
     <ul>
       <li>
-        <a class="svc" data-wa="Olá! Gostaria de saber mais sobre lentes em resina." href="https://www.instagram.com/cintraodontologia_/">
+        <a class="svc" href="sorriso.html#lentes-resina">
           <div>
             <h3>Lentes em resina</h3>
             <p class="svc-for">Dentes manchados, com espaços, lascados ou de formato irregular.</p>
             <p>A resina é aplicada diretamente sobre os dentes, no consultório, com planejamento da cor e da forma.</p>
           </div>
-          <span class="svc-cta">Falar sobre lentes em resina</span>
+          <span class="svc-cta">Ver lentes em resina</span>
         </a>
       </li>
       <li>
-        <a class="svc" data-wa="Olá! Gostaria de saber mais sobre lentes em porcelana." href="https://www.instagram.com/cintraodontologia_/">
+        <a class="svc" href="sorriso.html#lentes-porcelana">
           <div>
             <h3>Lentes em porcelana</h3>
             <p class="svc-for">Quem quer mudar cor, formato e alinhamento com um acabamento sob medida.</p>
             <p>Lâminas finas feitas em laboratório a partir do seu planejamento. A indicação depende da avaliação.</p>
           </div>
-          <span class="svc-cta">Falar sobre lentes em porcelana</span>
+          <span class="svc-cta">Ver lentes em porcelana</span>
         </a>
       </li>
       <li>
-        <a class="svc" data-wa="Olá! Gostaria de saber mais sobre gengivoplastia." href="https://www.instagram.com/cintraodontologia_/">
+        <a class="svc" href="sorriso.html#gengivoplastia">
           <div>
             <h3>Gengivoplastia</h3>
             <p class="svc-for">Sorriso em que a gengiva aparece demais ou tem contorno desigual.</p>
             <p>Ajuste do contorno da gengiva para deixar o sorriso mais proporcional, muitas vezes junto com as lentes.</p>
           </div>
-          <span class="svc-cta">Falar sobre gengivoplastia</span>
+          <span class="svc-cta">Ver gengivoplastia</span>
         </a>
       </li>
       <li>
-        <a class="svc" data-wa="Olá! Gostaria de saber mais sobre harmonização facial." href="https://www.instagram.com/cintraodontologia_/">
-          <div>
-            <h3>Harmonização facial</h3>
-            <p class="svc-for">Quem quer suavizar linhas de expressão ou dar mais definição aos lábios.</p>
-            <p>Toxina botulínica e preenchimento labial, com a Dra. Karen Cintra, respeitando as características do seu rosto.</p>
-          </div>
-          <span class="svc-cta">Falar sobre harmonização facial</span>
-        </a>
-      </li>
-      <li>
-        <a class="svc" data-wa="Olá! Gostaria de saber mais sobre implantes e coroas." href="https://www.instagram.com/cintraodontologia_/">
-          <div>
-            <h3>Implantes e coroas</h3>
-            <p class="svc-for">Falta de um ou mais dentes, ou coroas antigas que precisam ser trocadas.</p>
-            <p>Reposição com implantes e coroas, cuidando da mordida e da aparência do sorriso.</p>
-          </div>
-          <span class="svc-cta">Falar sobre implantes</span>
-        </a>
-      </li>
-      <li>
-        <a class="svc" data-wa="Olá! Gostaria de saber mais sobre clareamento." href="https://www.instagram.com/cintraodontologia_/">
+        <a class="svc" href="sorriso.html#clareamento">
           <div>
             <h3>Clareamento</h3>
             <p class="svc-for">Dentes amarelados ou escurecidos pelo tempo, café, vinho ou cigarro.</p>
             <p>Clareamento com acompanhamento profissional, depois de avaliar a saúde dos dentes e da gengiva.</p>
           </div>
-          <span class="svc-cta">Falar sobre clareamento</span>
+          <span class="svc-cta">Ver clareamento</span>
+        </a>
+      </li>
+      <li>
+        <a class="svc" href="estetica-facial.html">
+          <div>
+            <h3>Estética facial</h3>
+            <p class="svc-for">Quem quer suavizar linhas de expressão ou dar mais definição aos lábios.</p>
+            <p>Toxina botulínica e preenchimento labial, com a Dra. Karen Cintra, respeitando as características do seu rosto.</p>
+          </div>
+          <span class="svc-cta">Ver estética facial</span>
+        </a>
+      </li>
+      <li>
+        <a class="svc" href="implantes.html">
+          <div>
+            <h3>Implantes e coroas</h3>
+            <p class="svc-for">Falta de um ou mais dentes, ou coroas antigas que precisam ser trocadas.</p>
+            <p>Reposição com implantes e coroas, cuidando da mordida e da aparência do sorriso.</p>
+          </div>
+          <span class="svc-cta">Ver implantes e coroas</span>
         </a>
       </li>
     </ul>
   </div>
 </section>
-
-
-
-<section class="about" id="dra-isabelle">
+<section class="teaser curved" id="casos">
+  <div class="wrap">
+    <div class="teaser-head">
+      <h2>Resultados reais de pacientes da Cintra</h2>
+      <p>Cada resultado depende de uma avaliação individual e varia de pessoa para pessoa.</p>
+    </div>
+    <div class="teaser-grid">
+      <figure><img src="sorriso-depois.jpg" alt="Paciente sorrindo depois do tratamento na Cintra" loading="lazy"></figure>
+      <figure><img src="caso1-depois.jpg" alt="Sorriso com lentes em resina e coroas sobre implantes" loading="lazy"></figure>
+      <figure><img src="labios-resultado.jpg" alt="Preenchimento labial com contorno delicado" loading="lazy"></figure>
+    </div>
+    <div class="teaser-foot">
+      <a class="btn btn-dark" href="resultados.html">Ver todos os resultados</a>
+      <small>Imagens publicadas com autorização dos pacientes.</small>
+    </div>
+  </div>
+</section>
+<section class="about on-ivory" id="socias">
   <div class="wrap">
     <div class="about-head">
       <h2>As sócias da Cintra</h2>
@@ -791,34 +175,14 @@ body::after{content:"";position:fixed;inset:0;z-index:70;pointer-events:none;bac
         <div class="arch"><img src="dra-karen-sobre.jpg" alt="Dra. Karen Cintra atendendo uma paciente" loading="lazy"></div>
         <h3>Dra. Karen Cintra</h3>
         <p class="role">Sócia</p>
-        <p>Atua na harmonização facial, com toxina botulínica e preenchimentos feitos com delicadeza e respeito às suas características.</p>
+        <p>Atua na estética facial, com toxina botulínica e preenchimentos feitos com delicadeza e respeito às suas características.</p>
         <a class="btn btn-dark" data-wa="Olá! Gostaria de conversar com a Dra. Karen sobre uma avaliação." href="https://www.instagram.com/cintraodontologia_/">Falar com a Dra. Karen</a>
         <!-- PENDENTE: confirmar áreas de atuação e CRO da Dra. Karen -->
       </article>
     </div>
+    <div class="linkrow"><a class="textlink" href="socias.html">Conhecer as sócias e a formação da equipe</a></div>
   </div>
 </section>
-
-<section class="growth" id="evolucao">
-  <div class="wrap">
-    <h2>Sempre em busca de melhorar</h2>
-    <p class="lead">Formação contínua, eventos e imersões fazem parte da rotina da Cintra. Atualização constante para cuidar melhor de cada paciente.</p>
-    <div class="gcar" id="gcar">
-      <div class="gcar-track" tabindex="0" aria-label="Fotos de formação da Cintra">
-        <figure class="gslide"><img src="certificado-vlr.jpg" alt="Dra. Isabelle Cintra com o certificado da Imersão VLR" loading="lazy"><figcaption>Certificado da Imersão VLR</figcaption></figure>
-        <figure class="gslide"><img src="evento-codigos.jpg" alt="Dra. Isabelle Cintra no evento Códigos do Sucesso" loading="lazy"><figcaption>Evento Códigos do Sucesso</figcaption></figure>
-      </div>
-      <div class="gcar-nav">
-        <button type="button" class="gprev" aria-label="Foto anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
-        <div class="gdots" role="tablist"><button type="button" class="on" aria-label="Foto 1"></button><button type="button" aria-label="Foto 2"></button></div>
-        <button type="button" class="gnext" aria-label="Próxima foto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
 <section class="process">
   <div class="wrap process-grid">
     <div class="process-intro">
@@ -834,6 +198,7 @@ body::after{content:"";position:fixed;inset:0;z-index:70;pointer-events:none;bac
   </div>
 </section>
 
+
 <section class="faq" id="duvidas">
   <div class="wrap faq-grid">
     <h2>Perguntas que os pacientes costumam fazer</h2>
@@ -841,10 +206,6 @@ body::after{content:"";position:fixed;inset:0;z-index:70;pointer-events:none;bac
       <details>
         <summary>Qual a diferença entre lentes em resina e em porcelana?</summary>
         <p>A lente em resina é feita diretamente nos dentes, no consultório, e em geral exige menos desgaste. A de porcelana é produzida em laboratório e costuma resistir melhor a manchas. A escolha depende da avaliação, dos seus hábitos e do resultado que você deseja.</p>
-      </details>
-      <details>
-        <summary>Preciso desgastar os dentes para fazer lentes?</summary>
-        <p>Depende do caso e do material. Na avaliação explicamos o que será necessário no seu planejamento, antes de qualquer procedimento.</p>
       </details>
       <details>
         <summary>O tratamento dói?</summary>
@@ -869,37 +230,32 @@ body::after{content:"";position:fixed;inset:0;z-index:70;pointer-events:none;bac
     </div>
   </div>
 </section>
-
 <section class="cta curved">
   <div class="wrap">
-    <div class="cta-card" id="ctaCard">
-      <div class="cta-bg" aria-hidden="true"><img id="ctaImg" class="cta-blurred" src="paciente-cintra.jpg" alt="" width="1920" height="1080" loading="lazy"><div class="cta-blur"></div><img id="ctaSharp" class="cta-sharp" src="paciente-cintra.jpg" alt="" width="1920" height="1080" loading="lazy"><i class="cta-ring" id="ctaRing"></i></div>
-      <div class="cta-stage">
-        <h2 class="cta-l">Agende sua <em>avaliação</em></h2>
-        <figure class="cta-window" id="ctaWin"><img src="paciente-cintra.jpg" alt="Paciente da Cintra sorrindo ao ver o resultado no espelho" loading="lazy"></figure>
-        <h2 class="cta-r">na <em>Cintra</em></h2>
-      </div>
-      <div class="cta-foot">
+    <div class="cta-card">
+      <figure class="cta-photo"><img src="paciente-cintra.jpg" alt="Paciente da Cintra sorrindo ao ver o resultado no espelho" width="1920" height="1080" loading="lazy"></figure>
+      <div class="cta-body">
+        <h2>Agende sua <em>avaliação</em> na <em>Cintra</em></h2>
         <p>Fale com a equipe pelo WhatsApp e combine o melhor dia e horário com a Dra. Isabelle ou com a Dra. Karen.</p>
-        <a class="btn btn-light" data-wa="Olá! Gostaria de agendar uma avaliação na Cintra Odontologia." href="https://www.instagram.com/cintraodontologia_/">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-      Agendar minha avaliação
-    </a>
+        <a class="btn btn-light" data-wa="Olá! Gostaria de agendar uma avaliação na Cintra Odontologia." href="https://www.instagram.com/cintraodontologia_/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Agendar minha avaliação</a>
         <small class="cta-note">Os resultados variam de acordo com cada paciente.</small>
       </div>
     </div>
   </div>
 </section>
-
 </main>
 
 <footer class="footer curved">
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <a class="brand" href="#topo" aria-label="Voltar ao topo">
+        <a class="brand" href="index.html" aria-label="Página inicial">
           <img src="logo-cintra.png" alt="Cintra Odontologia &amp; Estética" width="596" height="174">
         </a>
+      </div>
+      <div>
+        <h3>Páginas</h3>
+        <div class="footer-nav"><a href="index.html">Início</a><a href="sorriso.html">Sorriso</a><a href="estetica-facial.html">Estética facial</a><a href="implantes.html">Implantes</a><a href="socias.html">Sócias</a><a href="resultados.html">Resultados</a></div>
       </div>
       <div>
         <h3>Onde estamos</h3>
@@ -926,127 +282,6 @@ body::after{content:"";position:fixed;inset:0;z-index:70;pointer-events:none;bac
   Agendar no WhatsApp
 </a>
 
-<script>
-  /* TROCAR: número da clínica com DDI e DDD, só dígitos (ex.: 5511912345678) */
-  var WHATSAPP_NUMBER = "5511900000000";
-
-  document.querySelectorAll("[data-wa]").forEach(function (el) {
-    var msg = encodeURIComponent(el.getAttribute("data-wa"));
-    el.href = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + msg;
-    el.target = "_blank";
-    el.rel = "noopener";
-  });
-
-  document.querySelectorAll("[data-ba]").forEach(function (box) {
-    var input = box.querySelector("input");
-    function set(v){ v=Math.min(100,Math.max(0,v)); box.style.setProperty("--position", v+"%"); input.value=v; }
-    function fromX(x){ var r=box.getBoundingClientRect(); return ((x-r.left)/r.width)*100; }
-    var down=false;
-    box.addEventListener("pointerdown",function(e){ if(e.button!==0) return; down=true; box.classList.add("dragging"); box.setPointerCapture(e.pointerId); set(fromX(e.clientX)); });
-    box.addEventListener("pointermove",function(e){ if(down) set(fromX(e.clientX)); });
-    function end(e){ down=false; box.classList.remove("dragging"); }
-    box.addEventListener("pointerup",end); box.addEventListener("pointercancel",end);
-    input.addEventListener("input",function(){ set(parseFloat(input.value)); });
-    set(50);
-  });
-
-  /* Carrossel 3D do antes e depois */
-  (function(){
-    var deck=document.getElementById("deck");if(!deck)return;
-    var cards=[].slice.call(deck.querySelectorAll(".deck-card")),dots=[].slice.call(document.querySelectorAll("#deckDots button")),n=cards.length;
-    var cur=0,timer=null,DUR=9000,paused=false,visible=false,reduce=matchMedia("(prefers-reduced-motion:reduce)").matches,resumeT=null;
-    function show(i){
-      cur=(i+n)%n;
-      cards.forEach(function(c,k){
-        var off=(k-cur+n)%n;
-        c.classList.remove("active","next","prev");
-        var f=c.querySelector(".dk-prog i");f.style.transition="none";f.style.width="0";
-        if(off===0){c.classList.add("active");c.removeAttribute("aria-hidden");
-          if(!reduce&&!paused&&visible){requestAnimationFrame(function(){requestAnimationFrame(function(){f.style.transition="width "+DUR+"ms linear";f.style.width="100%"})})}
-          deck.setAttribute("data-accent",c.getAttribute("data-accent"));}
-        else{c.setAttribute("aria-hidden","true");if(off===1)c.classList.add("next");else if(off===n-1)c.classList.add("prev");}
-      });
-      dots.forEach(function(d,k){d.classList.toggle("on",k===cur)});
-    }
-    function stop(){clearInterval(timer);timer=null;var f=cards[cur].querySelector(".dk-prog i");f.style.transition="none";f.style.width="0"}
-    function start(){stop();if(reduce||paused||!visible)return;show(cur);timer=setInterval(function(){show(cur+1)},DUR)}
-    function pause(){paused=true;stop();clearTimeout(resumeT)}
-    function resume(delay){clearTimeout(resumeT);resumeT=setTimeout(function(){paused=false;start()},delay||0)}
-    cards.forEach(function(c,k){c.addEventListener("click",function(){if(k!==cur){show(k);if(!paused)start()}})});
-    dots.forEach(function(d,k){d.addEventListener("click",function(){show(k);start()})});
-    document.getElementById("deckPrev").addEventListener("click",function(){show(cur-1);start()});
-    document.getElementById("deckNext").addEventListener("click",function(){show(cur+1);start()});
-    deck.addEventListener("keydown",function(e){if(e.key==="ArrowRight"){show(cur+1);start()}else if(e.key==="ArrowLeft"){show(cur-1);start()}});
-    deck.addEventListener("mouseenter",pause);deck.addEventListener("mouseleave",function(){resume(600)});
-    deck.addEventListener("pointerdown",function(e){if(e.pointerType==="touch"){pause();}});
-    deck.addEventListener("pointerup",function(e){if(e.pointerType==="touch"){resume(7000)}});
-    deck.addEventListener("focusin",pause);deck.addEventListener("focusout",function(){resume(600)});
-    if("IntersectionObserver" in window){new IntersectionObserver(function(es){visible=es[0].isIntersecting;visible?start():stop()},{threshold:.35}).observe(deck)}
-    else{visible=true}
-    show(0);
-    /* leve inclinação 3D no card ativo */
-    if(matchMedia("(hover:hover)").matches&&!reduce){
-      deck.addEventListener("mousemove",function(e){var r=deck.getBoundingClientRect();var x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;deck.style.setProperty("--tx",(x*5).toFixed(2)+"deg");deck.style.setProperty("--ty",(y*-4).toFixed(2)+"deg")});
-      deck.addEventListener("mouseleave",function(){deck.style.setProperty("--tx","0deg");deck.style.setProperty("--ty","0deg")});
-    }
-  })();
-  (function(){
-    var t=document.querySelector(".gcar-track");if(!t)return;
-    var dots=document.querySelectorAll(".gdots button"),n=dots.length;
-    function idx(){return Math.round(t.scrollLeft/t.clientWidth)}
-    function go(i){i=Math.max(0,Math.min(n-1,i));t.scrollTo({left:i*(t.clientWidth+16),behavior:"smooth"})}
-    t.addEventListener("scroll",function(){var i=Math.min(n-1,Math.round(t.scrollLeft/(t.clientWidth+16)));dots.forEach(function(d,k){d.classList.toggle("on",k===i)})},{passive:true});
-    dots.forEach(function(d,k){d.addEventListener("click",function(){go(k)})});
-    document.querySelector(".gprev").addEventListener("click",function(){go(Math.round(t.scrollLeft/(t.clientWidth+16))-1)});
-    document.querySelector(".gnext").addEventListener("click",function(){go(Math.round(t.scrollLeft/(t.clientWidth+16))+1)});
-  })();
-  var ano = document.getElementById("ano");
-  if (ano) ano.textContent = new Date().getFullYear();
-
-  /* Revelação ao rolar */
-  (function(){
-    if(!("IntersectionObserver" in window)||matchMedia("(prefers-reduced-motion:reduce)").matches)return;
-    var groups=[
-      [".treat-intro, .cases-head, .about .wrap > h2, .about .wrap > p, .growth h2, .growth .wrap > p, .process-intro, .faq h2, .cta-l, .cta-r, .cta-window, .cta p, .cta .btn, .cta-note",0],
-      [".treatments ul > li, .partner, .deck, .deck-ctrl, .gcar, .steps, .faq details, .cases-foot",1]
-    ];
-    var els=[];
-    groups.forEach(function(g){document.querySelectorAll(g[0]).forEach(function(el){
-      if(el.closest(".hero")||els.indexOf(el)>-1)return;
-      var sib=el.parentElement?Array.prototype.indexOf.call(el.parentElement.children,el):0;
-      el.setAttribute("data-r","");el.style.setProperty("--i",Math.min(sib,6));els.push(el);
-    });});
-    document.querySelectorAll(".steps li").forEach(function(li,i){li.querySelector(".n").style.setProperty("--i",i)});
-    document.documentElement.classList.add("js");
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12,rootMargin:"0px 0px -6% 0px"});
-    els.forEach(function(el){io.observe(el)});
-  })();
-
-  /* Chamada final: janela nítida sobre o sorriso, fundo desfocado */
-  (function(){
-    var cta=document.getElementById("ctaCard"),img=document.getElementById("ctaImg"),win=document.getElementById("ctaWin"),
-        sharp=document.getElementById("ctaSharp"),ring=document.getElementById("ctaRing");
-    if(!cta||!img||!win||!sharp)return;
-    var IW=1920,IH=1080,FX=1010/1920,FY=665/1080;
-    function layout(){
-      var W=cta.clientWidth,H=cta.clientHeight;if(!W||!H)return;
-      var wx=win.offsetLeft,wy=win.offsetTop,ww=win.offsetWidth,wh=win.offsetHeight;
-      var cx=wx+ww/2,cy=wy+wh/2;
-      var s=Math.max(W/IW,H/IH,(H-cy)/((1-FY)*IH),cy/(FY*IH),(W-cx)/((1-FX)*IW),cx/(FX*IW))*1.02,w=IW*s,h=IH*s;
-      var left=Math.min(0,Math.max(W-w,cx-FX*w)),top=Math.min(0,Math.max(H-h,cy-FY*h));
-      var r=Math.min(24,wh/6),x=wx,y=wy;
-      img.style.width=w+"px";img.style.height=h+"px";img.style.left=left+"px";img.style.top=top+"px";
-      sharp.style.width=w+"px";sharp.style.height=h+"px";sharp.style.left=left+"px";sharp.style.top=top+"px";
-      sharp.style.clipPath="inset("+(y-top)+"px "+(left+w-x-ww)+"px "+(top+h-y-wh)+"px "+(x-left)+"px round "+r+"px)";
-      ring.style.cssText="left:"+x+"px;top:"+y+"px;width:"+ww+"px;height:"+wh+"px;border-radius:"+r+"px";
-      cta.classList.add("fx");
-    }
-    layout();
-    window.addEventListener("resize",layout);
-    window.addEventListener("load",layout);
-    if(document.fonts&&document.fonts.ready)document.fonts.ready.then(layout);
-    if("ResizeObserver" in window)new ResizeObserver(layout).observe(cta);
-  })();
-</script>
+<script src="site.js"></script>
 </body>
 </html>
