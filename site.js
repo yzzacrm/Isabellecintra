@@ -105,3 +105,18 @@
     if(dd)dd.addEventListener("click",function(){var p=dd.parentElement,o=p.classList.toggle("open");dd.setAttribute("aria-expanded",o?"true":"false")});
     document.addEventListener("click",function(e){var p=document.querySelector(".nav-dd.open");if(p&&!p.contains(e.target)){p.classList.remove("open")}});
   })();
+
+  /* Leve movimento do fundo com o mouse, só em telas com mouse (referências Naturea e Desfoque Dental) */
+  (function(){
+    var bg=document.querySelector(".phero-bg img"),hero=document.querySelector(".phero");
+    if(!bg||!hero||!matchMedia("(hover:hover)").matches||matchMedia("(prefers-reduced-motion:reduce)").matches)return;
+    var tick=false;
+    hero.addEventListener("mousemove",function(e){
+      if(tick)return;tick=true;
+      requestAnimationFrame(function(){
+        var r=hero.getBoundingClientRect(),x=((e.clientX-r.left)/r.width-.5)*14,y=((e.clientY-r.top)/r.height-.5)*10;
+        bg.style.transform="scale(1.04) translate("+x.toFixed(1)+"px,"+y.toFixed(1)+"px)";tick=false;
+      });
+    });
+    hero.addEventListener("mouseleave",function(){bg.style.transform=""});
+  })();

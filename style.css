@@ -588,3 +588,32 @@ body::after{content:"";position:fixed;inset:0;z-index:70;pointer-events:none;bac
 .back{display:inline-flex;margin-bottom:1.4rem;font-size:.9rem;opacity:.85;text-decoration:none;color:#E6DCCF}
 .back:hover{text-decoration:underline}
 .phero-photo.small{width:min(100%,21rem)}
+
+/* Cabeçalho das páginas com imagem de fundo */
+.phero{min-height:clamp(33rem,50vw,42rem);display:flex;align-items:center}
+.phero::before{display:none}
+.phero>.wrap{position:relative;z-index:1}
+.phero-grid{display:block}
+.phero-bg{position:absolute;inset:0;z-index:0}
+.phero-bg img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;filter:saturate(1.05) contrast(1.04)}
+.phero-bg::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,#000 0%,rgba(0,0,0,.88) 7%,rgba(0,0,0,.42) 22%,rgba(0,0,0,0) 46%),
+             linear-gradient(90deg,rgba(20,13,9,.93) 0%,rgba(20,13,9,.74) 40%,rgba(20,13,9,.22) 76%,rgba(20,13,9,.12) 100%),
+             linear-gradient(0deg,rgba(20,13,9,.6) 0%,rgba(20,13,9,0) 34%)}
+.phero-bg.cut img{object-fit:contain;object-position:right bottom;filter:contrast(1.04) saturate(1.04) drop-shadow(0 1.4rem 2.6rem rgba(8,5,3,.7))}
+.phero-bg.cut::after{background:linear-gradient(180deg,#000 0%,rgba(0,0,0,.88) 7%,rgba(0,0,0,.42) 22%,rgba(0,0,0,0) 46%),linear-gradient(90deg,rgba(20,13,9,.5) 0%,rgba(20,13,9,0) 55%)}
+.phero-text{max-width:36rem}
+@media(max-width:800px){
+  .phero{min-height:30rem}
+  .phero-bg::after{background:linear-gradient(180deg,#000 0%,rgba(0,0,0,.85) 7%,rgba(0,0,0,.35) 26%,rgba(20,13,9,.55) 60%,rgba(20,13,9,.82) 100%)}
+  .phero-bg.cut img{object-position:center bottom;opacity:.55}
+}
+.phero-bg:not(.cut) img{position:absolute;right:0;top:0;left:auto;width:70%;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 38%);mask-image:linear-gradient(90deg,transparent 0%,#000 38%)}
+@media(max-width:800px){.phero-bg:not(.cut) img{width:100%;-webkit-mask-image:none;mask-image:none}}
+
+/* Brilho no botão ao passar o mouse (referência Desfoque Dental) */
+.btn-light,.btn-dark{position:relative;overflow:hidden}
+.btn-light::before,.btn-dark::before{content:"";position:absolute;top:0;left:-100%;width:60%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);transition:left .6s;pointer-events:none}
+.btn-light:hover::before,.btn-dark:hover::before{left:150%}
+.phero-bg img{transition:transform .8s ease-out}
